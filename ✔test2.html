@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Example</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style type="text/css">
+  /* Resetting default margin and padding */
+*{
+  padding: 0;
+  margin: 0;
+}
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the navbar */
+nav {
+  background-color: wheat;
+  color: black;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: -100px;
+  padding-left: 100px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 20px 15px;
+  display: inline-block;
+  transition: 0.9s;
+  position: relative;
+
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: white;
+  border-radius: 50px;
+}
+
+a p{
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 20px;
+  position: relative;
+  margin-left: 200px;
+  color: black;
+  position: absolute;
+}
+.number{
+ margin-right: -150px;
+  padding-left: 200px
+}
+.first img{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.writing{
+  position: relative;
+  color: white;
+/*  margin-left: 600px;*/
+  padding-top: 250px;
+}
+.writing h1{
+  margin-left: 600px;
+  font-size: 55px;
+}
+.writing p{
+  font-weight: bolder;
+  margin-left: 500px;
+  line-height: 30px;
+  font-size: 20px;
+
+}
+.second{
+  width: 100%;
+  height: 650px;
+  padding-top: 250px;
+/*  background-color: wheat;*/
+}
+.s1{
+  margin-left: 190px;
+  margin-top: 200px;
+ width: 300px;
+ height: 400px;
+ background-color: white;
+ position: absolute;
+}
+.s2{
+  position: relative;
+  margin-left: 510px;
+  margin-top: 200px;
+ width: 300px;
+ height: 400px;
+ background-color: white;
+ position: absolute;
+}
+.s3{
+  position: relative;
+  margin-left: 830px;
+  margin-top: 200px;
+ width: 300px;
+ height: 400px;
+ background-color: white;
+ position: absolute;
+}
+.s4{
+  position: relative;
+  margin-left: 1150px;
+  margin-top: 200px;
+ width: 300px;
+ height: 400px;
+ background-color: white;
+}
+.second i{
+  width: 70px;
+  line-height: 70px;
+  font-size: 30px;
+  background-color: skyblue;
+  text-align: center;
+  border-radius:50%;
+  color: #ffffff;
+/*  margin-top: 40px;*/
+  margin-left: 110px;
+ }
+ .second h3{
+  font-size: 25px;
+  color: skyblue;
+  margin-top: 10px;
+  text-align: center;
+ }
+ .second p{
+  text-align: justify;
+  margin-top: 20px;
+ }
+ .third{
+  width: 100%;
+  height: 70vh;
+  background-color: #d6d5d2;
+ }
+ .third .one{
+  width: 600px;
+  height: 540px;
+/*  background-color: wheat;*/
+  margin-left: 190px;
+  position: absolute;
+ }
+ .third .one p{
+  padding-top: 100px;
+ }
+ .third .one h1{
+  padding-top: 15px;
+  text-transform: uppercase;
+ }
+ .third .one h5{
+  font-size: 17px;
+  padding-top: 20px;
+  width: 450px;
+  text-align: justify;
+  color: #787262;
+ }
+ .third .one h6{
+  width: 200px;
+  height: 20px;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 8px;
+  background-color: white;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 10px;
+ }
+ .third .one a{
+  color: black;
+  text-decoration: none;
+ }
+  .third .one h6:hover{
+    background-color: black;
+    color: white;
+    transition: 1.5s;
+    border-radius: 20px;
+  }
+
+ .third .two{
+  position: relative;
+  width: 700px;
+  margin-left: 800px;
+  height: 400px;
+/*  background-color: skyblue;*/
+ }
+ .third .two img{
+  width: 600px;
+  margin-top: 80px;
+ }
+ .four{
+  width: 100%;
+  height: 400px;
+  background-color: #d6d5d2;
+ }
+ .four .first{
+  width: 80%;
+  height: 350px;
+  background-color: white;
+  margin-left: 190px;
+  position: absolute;
+ }
+ .four .first p{
+  margin-left: 50px;
+  padding-top: 50px;
+  font-size: 25px;
+ }
+ .four .first h1{
+  text-transform: uppercase;
+  margin-left: 90px;
+  font-size: 40px;
+ }
+ .four .first img{
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 300px;
+  height: 225px;
+  border-radius: 20px 20px 0px 0px;
+ }
+ .four .second{
+  position: relative;
+  margin-left: 600px;
+/*  margin-bottom: 50px;*/
+  width: 400px;
+  height: 100px;
+  position: absolute;
+ }
+ .four .second p{
+  margin-left: 50px;
+  margin-top: -200px;
+  font-size: 25px;
+ }
+ .four .second h1{
+  text-transform: uppercase;
+  margin-left: 120px;
+  font-size: 40px;
+ }
+ .four .second img{
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 300px;
+  height: 225px;
+  border-radius: 20px 20px 0px 0px;
+}
+.four .third{
+  position: relative;
+  width: 405px;
+  height: 350px;
+/*  background-color: black;*/
+  margin-left: 1050px;
+
+}
+.four .third img{
+/*  margin-top: 45px;*/
+  width: 405px;
+  height: 350px;
+position: absolute;
+}
+.four .third p{
+  position: relative;
+  color: white;
+  margin-left: 90px;
+  font-size: 20px;
+  padding-top: 50px;
+}
+.four .third h1{
+  position: relative;
+  color: white;
+  margin-left: 145px;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.five{
+  width: 100%;
+  height: 600px;
+  background-color: white;
+}
+.five .first{
+  width: 400px;
+  margin-left: 190px;
+  height: 500px;
+/*  background-color: white;*/
+  position: absolute;
+}
+.five .second{
+  position: relative;
+  margin-left: 630px;
+  margin-top: -250px;
+  width: 400px;
+  height: 250px;
+/*  background-color: skyblue;*/
+  position: absolute;
+}
+.five .third{
+  position: relative;
+  margin-left: 1070px;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+}
+.five h1{
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.five img{
+  margin-top: 20px;
+  width: 400px;
+  height: 200px;
+}
+.five .third img{
+  margin-top: 30px;
+}
+.five P{
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: blue;
+  margin-left: 10px;
+}
+.five h5{
+  text-align: justify;
+  font-size: 15px;
+  margin-top: 10px;
+  text-indent: 20px;
+}
+.five .first p{
+  margin-top: 250px;
+}
+footer{
+  width: 100%;
+  font-size: 25px;
+  height: 100px;
+     background: linear-gradient(to bottom, #f1f2f3 1px, #222831 1px);
+}
+footer h2{
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  padding-top: 40PX;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#"><p>Softgray</p></a>
+  <ul>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Jobs</a></li>
+    <li><a href="#">Contact</a></li>
+    <li class="number"><a href="#">+92-310-310-7668</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <div class="first">
+    <img src="test2z.jpg">
+    <div class="writing">
+    <h1>Creative Solotions</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+    tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi <br>ut aliquip ex ea commodo
+    consequat.</p>
+<!--writing--></div>
+ <!--first--></div>
+<!-- content--></div>
+ <div class="second">
+   <div class="s1">
+     <i class="fa-regular fa-message"></i>
+     <h3>Consulting</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+   <div class="s2">
+      <i class="fa-solid fa-code"></i>
+     <h3>Developing</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+   <div class="s3">
+    <i class="fa-solid fa-window-restore"></i>
+     <h3>designing</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+    <div class="s4">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Anaylysis</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+ <!--second--></div>
+ <div class="third">
+   <div class="one">
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+     <h1>Lorem ipsum</h1>
+     <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h5>
+     <a href="#"><h6>VIEW MORE</h6></a>
+<!-- one--></div>
+  <div class="two">
+    <img src="test2b.png">
+  </div>
+<!-- third--></div>
+<div class="four">
+    <div class="first">
+      <p>Lorem ipsum dolor sit amet,</p>
+      <h1>the news</h1>
+      <img src="test2m.jpg">
+    </div>
+    <div class="second">
+       <p>Lorem ipsum dolor sit amet,</p>
+      <h1>libro</h1>
+      <img src="test2d.jpg">
+    </div>
+    <div class="third">
+        <img src="test2g.png">
+       <p>Lorem ipsum dolor sit amet,</p>
+       <h1>elite</h1>
+    </div>
+<!-- four--></div>
+  <div class="five">
+    <div class="first">
+      <h1>Latest News</h1>
+      <img src="test2k.jpg">
+       <p>Lorem ipsum dolor sit amet,</p>    
+       <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+      </div>
+    <div class="second">
+      <h1>release</h1>
+      <img src="test2f.jpg">
+       <p>Lorem ipsum dolor sit amet,</p>    
+       <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+    </div>
+    <div class="third">
+      <h1>Jobs</h1>
+      <img src="test2y.jpg">
+       <p>Lorem ipsum dolor sit amet,</p>    
+       <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+    </div>
+    <footer>
+        <h2>© 2024 All Rights Reserved By Free Html Templates</h2> 
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
